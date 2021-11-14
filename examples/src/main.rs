@@ -1,85 +1,85 @@
-rouille::rouille! {
-    externe cagette rouille;
+irzha::irzha! {
+    зовнішній ящик irzha;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+    вжити std::collections::Словник як Слов;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
+    конвенція КлючЗначення {
+        функція записати(&власний, ключ: Строка, значення: Строка);
+        функція отримати(&власний, ключ: Строка) -> Результат<Можливо<&Строка>, Строка>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    статична змінна СЛОВНИК: Можливо<Слов<Строка, Строка>> = Нічого;
 
-    structure Concrète;
+    структура Конкретний;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    реалізація КлючЗначення для Конкретний {
+        функція записати(&власний, ключ: Строка, значення: Строка) {
+            нехай слов = небезпечно {
+                СЛОВНИК.отримати_або_вставити_із(Default::default)
             };
-            dico.insérer(clé, valeur);
+            слов.вставити(ключ, значення);
         }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+        функція отримати(&власний, ключ: Строка) -> Результат<Можливо<&Строка>, Строка> {
+            якщо нехай Дещо(слов) = небезпечно { СЛОВНИК.як_посилання() } {
+                Файно(слов.отримати(&ключ))
+            } інакше {
+                Хиба("перевірте словник".до())
             }
         }
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaine>> {
-        si i % 2 == 1 {
-            si i == 42 {
-                Quelque(Arf(Chaine::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
+    публічна(ящик) функція моливості(i: u32) -> Можливо<Результат<u32, Строка>> {
+        якщо i % 2 == 1 {
+            якщо i == 42 {
+                Дещо(Хиба(Строка::із("лайно")))
+            } інакше {
+                Дещо(Файно(33))
             }
-        } sinon {
-            Rien
+        } інакше {
+            Нічого
         }
     }
 
-    asynchrone fonction exemple() {
+    асинхронна функція приклад() {
     }
 
-    asynchrone fonction exemple2() {
-        exemple().attend;
+    асинхронна функція приклад2() {
+        приклад().чекати;
     }
 
-    fonction principale() {
-        soit mutable x = 31;
+    функція основна() {
+        нехай змінна x = 31;
 
-        selon x {
+        порівняти x {
             42 => {
-                affiche!("omelette du fromage")
+                друкувати!("цеглина з лайна")
             }
-            _ => affiche!("voila")
+            _ => друкувати!("будьмо!")
         }
 
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
+        для i у 0..10 {
+            нехай val = петля {
+                зупинка i;
             };
 
-            tant que x < val {
+            поки x < val {
                 x += 1;
             }
 
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
+            x = якщо нехай Дещо(результат) = моливості(i) {
+                результат.розпакувати()
+            } інакше {
                 12
             };
         }
 
-        //secondaire();
+        // побічна();
     }
 
-    #[légal(code_inaccessible)]
-    fonction secondaire() {
-        merde!("oh non"); // for the true French experience
-        calisse!("tabernacle"); // for friends speaking fr-ca
-        oups!("fetchez la vache"); // in SFW contexts
+    #[дозволити(недоступний_код)]
+    функція побічна() {
+        лайно!("о ні!"); // for the true Ukraiian experience
+        дідько!("ну що за люди");
+        халепа!("корову вкрали"); // in SFW contexts
     }
 }

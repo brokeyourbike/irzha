@@ -1,10 +1,10 @@
-name: Rouille
+name: tests
 
 on:
   push:
-    branches: [ principale ]
+    branches: [ main ]
   pull_request:
-    branches: [ principale ]
+    branches: [ main ]
 
 jobs:
   ic:
