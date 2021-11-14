@@ -88,4 +88,4 @@ See the [original post](https://github.com/bnjbvr/rouille#other-languages) for a
 
 ## Ліцензія
 
-[WTFPL](https://github.com/brokeyourbike/irzha/raw/main/LICENSE)
+[WTFPL](https://github.com/brokeyourbike/irzha/blob/main/LICENSE)
