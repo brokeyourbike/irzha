@@ -26,7 +26,7 @@ jobs:
           toolchain: ${{ matrix.rust }}
           override: true
 
-      - name: Lancer les exemples
+      - name: Run examples
         uses: actions-rs/cargo@v1
         with:
           command: run
