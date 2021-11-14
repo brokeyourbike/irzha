@@ -54,7 +54,7 @@ irzha::irzha! {
 ```rust
 #[дозволити(недоступний_код)]
 функція побічна() {
-    лайно!("о ні!"); // for the true Ukraiian experience
+    лайно!("о ні!"); // for the true Ukrainian experience
     дідько!("ну що за люди");
     халепа!("корову вкрали"); // in SFW contexts
 }
