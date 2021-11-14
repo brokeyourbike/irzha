@@ -52,7 +52,7 @@ irzha::irzha! {
 ### Alternative syntax
 
 ```rust
-#[дозволити(code_inaccessible)]
+#[дозволити(недоступний_код)]
 функція побічна() {
     лайно!("о ні!"); // for the true Ukraiian experience
     дідько!("ну що за люди");
