@@ -1,0 +1,21 @@
+name: release-please
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  update_release_draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: google-github-actions/release-please-action@v2
+        id: release
+        with:
+          release-type: rust
+
+      - uses: actions/checkout@v2
+        if: ${{ steps.release.outputs.release_created }}
