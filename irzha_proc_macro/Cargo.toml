@@ -2,6 +2,13 @@
 name = "irzha"
 version = "0.1.0"
 edition = "2018"
+authors = ["Ivan Stasiuk <brokeyourbike@gmail.com>"]
+description = "Write Rust programs using Ukrainian language"
+
+repository = "https://github.com/brokeyourbike/irzha"
+readme = "README.md"
+keywords = ["proc-macro", "ukrainian"]
+license = "WTFPL"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
