@@ -6,7 +6,7 @@ authors = ["Ivan Stasiuk <brokeyourbike@gmail.com>"]
 description = "Write Rust programs using Ukrainian language"
 
 repository = "https://github.com/brokeyourbike/irzha"
-readme = "README.md"
+readme = "./../README.md"
 keywords = ["proc-macro", "ukrainian"]
 license = "WTFPL"
 
