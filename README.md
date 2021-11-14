@@ -3,7 +3,7 @@
 <img src="assets/logo-transparent.png" alt="irzha logo" width="256" height="256"/>
 
 Aren't you _втомився_ from writing Rust programs in English? Do you like saying
-"лайно" a lot? Would you like to try something different, in an exotic and
+"лайно" and "дідько" a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some Ukrainian touch to your
 programs?
 
