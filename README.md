@@ -62,7 +62,7 @@ irzha::irzha! {
 
 ### Other examples
 
-See the [examples](https://github.com/brokeyourbike/irzha/examples/src/main.rs) to get a rough sense of the whole syntax.
+See the [examples](https://github.com/brokeyourbike/irzha/blob/main/examples/src/main.rs) to get a rough sense of the whole syntax.
 
 ## contributors
 
