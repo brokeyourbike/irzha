@@ -1,20 +1,16 @@
-# іржа
+# Іржа
 
 <img src="assets/logo-transparent.png" alt="irzha logo" width="256" height="256"/>
 
-Aren't you _втомився_ from writing Rust programs in English? Do you like saying
-"лайно" and "дідько" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some Ukrainian touch to your
-programs?
+Чи ти не _втомився_ від написання Rust програм англійською? Чи ти бажаешь часто казати
+"лайно" або "дідько"? Бажаєш чи ти спробувати щось інше, на єкзотичному та чудернацько звучній мові? Чи бажаешь ти привнести українській дотик до твоїх програм?
 
-**irzha** (Ukrainian for _Rust_) is here to save your day, as it allows you to
-write Rust programs in Ukrainian, using Ukrainian keywords, Ukrainian function names,
-Ukrainian idioms.
+**Іржа** (це _Rust_ українською) тут щоб зробити тобі день, так як він дозволяє тобі писати Rust на українській, вживаючи українські ключові слова, українські назви функцій,
+українські ідіоми.
 
-This has been designed to be used as the official programming language to
-develop the future Ukrainian sovereign operating system.
+Ця мова була спроектована для використання як офіційна мова програмування для розробки майбутньої незалежної операційної системи України.
 
-Here's an example of what can be achieved with irzha:
+Ось приклад того що можна бути досягнути з іржою:
 
 ### `конвенція` та `реалізація` (a.k.a. `trait` and `impl`)
 
@@ -49,7 +45,7 @@ irzha::irzha! {
 }
 ```
 
-### Alternative syntax
+### Альтернативний синтаксис
 
 ```rust
 #[дозволити(недоступний_код)]
@@ -60,9 +56,9 @@ irzha::irzha! {
 }
 ```
 
-### Other examples
+### Інші приклади
 
-See the [examples](https://github.com/brokeyourbike/irzha/blob/main/examples/src/main.rs) to get a rough sense of the whole syntax.
+Дивиться [приклади](https://github.com/brokeyourbike/irzha/blob/main/examples/src/main.rs) щоб мати призлизну думку про увесь сінтаксіс.
 
 ## contributors
 
@@ -78,13 +74,13 @@ Please don't introduce swear words, though.
 - playing with raw proc macros
 - making a bit of fun about programming languages that do this seriously, though I can see their utility
 
-## Other languages
+## Інші мови
 
-See the [original post](https://github.com/bnjbvr/rouille#other-languages) for a more up-to-date list.
+Дивиться [оригінальний пост](https://github.com/bnjbvr/rouille#other-languages) для отримання більш актуального списку.
 
 ## Дякую
 
-[@bnjbvr](https://github.com/bnjbvr) for the idea, as well as the base repo
+[@bnjbvr](https://github.com/bnjbvr) за ідею, а також за базову репу
 
 ## Ліцензія
 
